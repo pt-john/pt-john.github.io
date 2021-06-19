@@ -52,10 +52,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#livestream">LiveStream</a></li>
+        <li><a href="#gallery">Engagement Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -63,7 +63,7 @@
   </div>
 </nav>
 
-<div class="jumbotron">
+<div class="jumbotron" id="home">
   <div class="container text-center">
     <h1>John & Rittu</h1>
     <h2>tie the knot</h2>
@@ -72,17 +72,93 @@
   </div>
 </div>
   
-<div class="container-fluid text-center">    
+<div class="container-fluid text-center" id="livestream">    
   <h4>Hold on tight! You will be able to watch the event live here when it starts.</h4><br>
   <!--h4>The livestream will begin at 11:00 AM (IST)</h4-->
   <br>
   <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TODO_POINT_TO_LIVE_STREAM" allowfullscreen></iframe>
   </div>
+  <!--remove when publishing-->
+  Note: The video will error out as the live stream is not setup yet.
+  <!--remove when publishing-->
+  <!-- TODO uncomment when publishing
+  Play on youtube: <a href="https://www.youtube.com/TODO_POINT_TO_LIVE_STREAM">https://www.youtube.com/TODO_POINT_TO_LIVE_STREAM</a> 
+  -->
 </div><br>
 
+<div class="container-fluid bg-3 text-center" id="gallery">  
+  <div class="text-container">
+	<h2> Engagement Gallery</h2>  
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+	  <a href="javascript:void(0);" class="" data-toggle="modal" data-target="#img1">
+		<img id="img1_preview" src="img/4F5A0866.JPG" class="img-responsive" style="width:100%" alt="Image">
+	  </a>
+    </div>
+	<div class="col-sm-4">
+	  <a href="javascript:void(0);" class="" data-toggle="modal" data-target="#img2">
+		<img id="img2_preview" src="img/B52A9552.JPG" class="img-responsive" style="width:100%" alt="Image">
+	  </a>
+    </div>
+	<div class="col-sm-4">
+	  <a href="javascript:void(0);" class="" data-toggle="modal" data-target="#img3">
+		<img id="img3_preview" src="img/4F5A0966.JPG" class="img-responsive" style="width:100%" alt="Image">
+	  </a>
+    </div>
+  </div>
+</div><br><br>																  
 
-<footer class="container-fluid text-center">
+<div id="img1" class="modal fade" role='dialog'>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<button type="button" class="prev" disabled="true" hidden="True">< Prev</button>
+				<button type="button" class="next" data-dismiss="modal" aria-hidden="true" data-toggle="modal" data-target="#img2">Next ></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/4F5A0866.JPG" style="width:100%;height:100%;">
+			</div>
+        </div>
+    </div>
+</div>
+<div id="img2" class="modal fade" role='dialog'>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<button type="button" class="prev" data-dismiss="modal" aria-hidden="true" data-toggle="modal" data-target="#img1">< Prev</button>
+				<button type="button" class="next" data-dismiss="modal" aria-hidden="true" data-toggle="modal" data-target="#img3">Next ></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/B52A9552.JPG" style="width:100%;height:100%;">
+			</div>
+        </div>
+    </div>
+</div>
+<div id="img3" class="modal fade" role='dialog'>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<button type="button" class="prev" data-dismiss="modal" aria-hidden="true" data-toggle="modal" data-target="#img2" >< Prev</button>
+				<button type="button" class="next" disabled="true" hidden="True">Next ></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/4F5A0966.JPG" style="width:100%;height:100%;">
+			</div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center" id="contact">
+<h3>Contact</h3>
+</div>
+
+<footer class="container-fluid text-center" id="footer">
 <!-- TODO uncomment when publishing
   Play on youtube: <a href="https://www.youtube.com/TODO_POINT_TO_LIVE_STREAM">https://www.youtube.com/TODO_POINT_TO_LIVE_STREAM</a> 
 -->
